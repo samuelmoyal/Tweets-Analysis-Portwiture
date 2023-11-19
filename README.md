@@ -83,3 +83,4 @@ On avait pour projet de proposer une musique qui pourrait être bénéfique psyc
 + Résoudre ce problème de padding
 + Ajouter la bio
 + Ajouter les nouvelles fonctionnalités# Samuel-Moyal-Coding-Weeks-
+# Samuel-Moyal-Coding-Weeks-
