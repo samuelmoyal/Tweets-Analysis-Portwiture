@@ -46,24 +46,20 @@ On avait pour projet de proposer une musique qui pourrait être bénéfique psyc
 + Son profil psychologique (informations recueillies des statuses postés par l'utilisateur)
 
 # Modules du package "collect"
-+ Recenser les statuses où l'utilisateur apparaît sans en être l'auteur (social) : OK Gabriel
-+ Recenser les statuses publiées par l'utilisateur (psychologique) : OK Pauline
-+ Recenser le tweet le plus populaire de l'utilisateur (en fonction de RT et de likes) (psychologique) : OK Noam
-+ Recenser le tweet le plus populaire où l'utilisateur figure sans en être l'auteur (en fonction de RT et de likes) (psychologique) : en cours Samuel
-+ Trouver la bio d'un utilisateur (psychologique) : Éloi (+ d'autres infos)
-+ Conversion et stockage en .json des tweets recueillis : OK Éloi
++ Recenser les statuses où l'utilisateur apparaît sans en être l'auteur (social) 
++ Recenser les statuses publiées par l'utilisateur (psychologique) 
++ Recenser le tweet le plus populaire de l'utilisateur (en fonction de RT et de likes) (psychologique) 
++ Trouver la bio d'un utilisateur (psychologique) 
++ Conversion et stockage en .json des tweets recueillis
 
 # Modules du package "analysis"          # Utiliser transformers
-+ Nuage de mots clés pertinents utilisés par l'utilisateur (filtre à déterminer ; social & psychologique) : Gabriel
-+ Musique qui décrit le mieux le profil psychologique de l'utilisateur : 
-+ À quel point l'utilisateur contreversé (social) (diversité des sentiments ? Viralité ?) :
-+ Classification des sentiments qui décrivent le mieux comment l'utilisateur s'exprime (psychologique) (gentil / méchant=> Camembert) : Héléna
-+ Classification des sentiments qui décrivent le mieux comment l'utilisateur est décrit (social) (gentil / méchant=> Camembert) :
-+ Nuage de mots clés pertinents utilisés pour parler de l'utilisateur (filtrer par nature grammaticale ? noms / adj ?) :
-+ Fame de l'utilisateur (fonction des likes...) : Samuel
-+ Twitter-addict meter : Samuel
-+ Nuage des sentiments qui ressortent le plus souvent des tweets de l'utilisateur : Éloi
-+ Nuage des setiments qui ressortent le plus  souvent des tweets où l'utilisateur est taggé :
++ Nuage de mots clés pertinents utilisés par l'utilisateur (filtre à déterminer ; social & psychologique) 
++ À quel point l'utilisateur contreversé (social) (diversité des sentiments ? Viralité ?) 
++ Classification des sentiments qui décrivent le mieux comment l'utilisateur s'exprime (psychologique) (gentil / méchant=> Camembert) 
++ Classification des sentiments qui décrivent le mieux comment l'utilisateur est décrit (social) (gentil / méchant=> Camembert) 
++ Nuage de mots clés pertinents utilisés pour parler de l'utilisateur (filtrer par nature grammaticale ? noms / adj ?) 
++ Nuage des sentiments qui ressortent le plus souvent des tweets de l'utilisateur 
++ Nuage des setiments qui ressortent le plus  souvent des tweets où l'utilisateur est taggé 
 
 # Module du package "display"
 + Camembert classification des sentimemts psychologique :
@@ -71,12 +67,8 @@ On avait pour projet de proposer une musique qui pourrait être bénéfique psyc
 + Jauge controverse :
 + Nuage de mots clés social :
 + Nuage de mots clés psychologique :
-+ Évolution de l'opinion publique sur l'utilisateur au fil d'une semaine : Pauline
++ Évolution de l'opinion publique sur l'utilisateur au fil d'une semaine 
 
-## Ce qu'il reste à faire jeudi matin :
-+ Faire en sorte que toutes ses propres fonctionnalités soient prêtes à passer à Dash en milieu de matinée
-+ Pauline : adapter la fonction 'opinion = f(temps)'
-+ Héléna : donut psychologique déconne... (cf. EmmanuelMacron)
 
 # Dash :
 + Changer la langue partout
