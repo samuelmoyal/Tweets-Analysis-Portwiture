@@ -57,9 +57,4 @@ Social keywords word cloud
 Psychological keywords word cloud  
 Public opinion trend over a week  
 
-Dash:  
-Change the language throughout  
-Fix the padding issue  
-Add the bio  
-Add the new features  
 
