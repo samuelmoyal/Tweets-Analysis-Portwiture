@@ -21,7 +21,7 @@ pip install stop_words wordcloud pandas textblob json dash plotly express graph 
 Permet de réaliser l'analyse psychologique d'un utilisateur twitter. Cette application est aussi utile pour détecter si l'environnement sur twitter d'un utilisateur est toxique ou bienveillant et elle detecte si l'utilisateur parle plutôt positivement ou négativement.
 
 ## Support
-gabriel.seigneur@student-cs.fr
+samuel.moyal@student-cs.fr
 
 ## Roadmap
 Proposer des aides et actions pour amélirorer son environnement twitter. Par exemple une liste de musique qui correspond aux gouts de l'utilisateur. Lui afficher ses messages trop haineux pour le mettre en garde.
