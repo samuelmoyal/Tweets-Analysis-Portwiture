@@ -1,18 +1,16 @@
-Name
+**Name**
 
 Psychotweet
 
-Description
+**Description**
 
 The goal of this project is to analyze the social and psychological profile of a Twitter user by examining both the tweets posted by the user and those posted about the user.
 
-App Visual
 
-Add a photo of the app.
 
-Installation
+**Installation**
 
-To run my program:
+To run the program:
 
 Clone the repository.
 Edit the credentials.py file by adding your Twitter developer credentials.
@@ -20,21 +18,15 @@ Install the following packages:
 pip install stop_words wordcloud pandas textblob json dash plotly express graph objects
 Navigate to the root of the repository and run the following command:
 python -m display.app
-Usage
+
+**Usage**
 
 This app performs a psychological analysis of a Twitter user. It can also help detect whether the Twitter environment around the user is toxic or supportive, and identify whether the user speaks in a more positive or negative tone.
 
-Support
 
-samuel.moyal@student-cs.fr
-
-Roadmap
+**Roadmap**
 
 Provide assistance and suggestions for improving the user's Twitter environment. For example, suggest a playlist based on the user's tastes. Warn the user about tweets with overly aggressive language.
-
-Project Status
-
-Our initial idea was to suggest music that could be beneficial for the user's mental health based on their positive preferences.
 
 User Psychological Profile
 
