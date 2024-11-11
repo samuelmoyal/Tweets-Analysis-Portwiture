@@ -1,78 +1,86 @@
-## Nom
+Name
+
 Psychotweet
 
-## Description
-Le but du projet est d'analyser le profil social et psychologique d'un utilisteur twitter en utilisant à la fois les tweets posté par l'utilisateur et les tweets postés sur l'utilisateur.
+Description
 
-## Visuel de l'app
-Ajouer une photo de l'app
+The goal of this project is to analyze the social and psychological profile of a Twitter user by examining both the tweets posted by the user and those posted about the user.
 
-## Installation
-Pour exécuter notre programme:
-1. Cloner le dépot
-2. Modifier le fichier `credentials.py` en ajoutant les identifiants twitter developer
-3. Installer les packages suivant
-```bash
+App Visual
+
+Add a photo of the app.
+
+Installation
+
+To run our program:
+
+Clone the repository.
+Edit the credentials.py file by adding your Twitter developer credentials.
+Install the following packages:
 pip install stop_words wordcloud pandas textblob json dash plotly express graph objects
-```
-4. Se placer à la racine du dépot et taper la commande suivante `python -m display.app`
+Navigate to the root of the repository and run the following command:
+python -m display.app
+Usage
 
-## Usage
-Permet de réaliser l'analyse psychologique d'un utilisateur twitter. Cette application est aussi utile pour détecter si l'environnement sur twitter d'un utilisateur est toxique ou bienveillant et elle detecte si l'utilisateur parle plutôt positivement ou négativement.
+This app performs a psychological analysis of a Twitter user. It can also help detect whether the Twitter environment around the user is toxic or supportive, and identify whether the user speaks in a more positive or negative tone.
 
-## Support
+Support
+
 samuel.moyal@student-cs.fr
 
-## Roadmap
-Proposer des aides et actions pour amélirorer son environnement twitter. Par exemple une liste de musique qui correspond aux gouts de l'utilisateur. Lui afficher ses messages trop haineux pour le mettre en garde.
+Roadmap
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+Provide assistance and suggestions for improving the user's Twitter environment. For example, suggest a playlist based on the user's tastes. Warn the user about tweets with overly aggressive language.
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+Contributing
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+Specify if you are open to contributions and the requirements for accepting them.
 
-## Authors and acknowledgment
-Je remercie toute l'équipe mercure pour ces deux superbes semaines de codingweeks !
+For those wanting to make changes to the project, providing documentation on getting started can be helpful. This might include scripts to run or environment variables to set. Make these steps explicit for clarity. Such instructions can also benefit your future self.
 
+You may also include instructions for linting the code or running tests to maintain high code quality and minimize the chance of accidental errors. Instructions for running tests are particularly useful if additional setup, like starting a Selenium server for browser testing, is required.
 
-## Project status
-On avait pour projet de proposer une musique qui pourrait être bénéfique psychologiquement pour l'utilisateur de notre appli en fonction de ses préférences positives. 
+Authors and Acknowledgment
 
-## Profil psychologique de l'utilisateur
+Thanks to the entire Mercure team for two fantastic weeks of coding!
 
-+ Son profil social (informations recueillies des tweets qui parlent de l'utilisateur)
-+ Son profil psychologique (informations recueillies des statuses postés par l'utilisateur)
+Project Status
 
-# Modules du package "collect"
-+ Recenser les statuses où l'utilisateur apparaît sans en être l'auteur (social) 
-+ Recenser les statuses publiées par l'utilisateur (psychologique) 
-+ Recenser le tweet le plus populaire de l'utilisateur (en fonction de RT et de likes) (psychologique) 
-+ Trouver la bio d'un utilisateur (psychologique) 
-+ Conversion et stockage en .json des tweets recueillis
+Our initial idea was to suggest music that could be beneficial for the user's mental health based on their positive preferences.
 
-# Modules du package "analysis"          # Utiliser transformers
-+ Nuage de mots clés pertinents utilisés par l'utilisateur (filtre à déterminer ; social & psychologique) 
-+ À quel point l'utilisateur contreversé (social) (diversité des sentiments ? Viralité ?) 
-+ Classification des sentiments qui décrivent le mieux comment l'utilisateur s'exprime (psychologique) (gentil / méchant=> Camembert) 
-+ Classification des sentiments qui décrivent le mieux comment l'utilisateur est décrit (social) (gentil / méchant=> Camembert) 
-+ Nuage de mots clés pertinents utilisés pour parler de l'utilisateur (filtrer par nature grammaticale ? noms / adj ?) 
-+ Nuage des sentiments qui ressortent le plus souvent des tweets de l'utilisateur 
-+ Nuage des setiments qui ressortent le plus  souvent des tweets où l'utilisateur est taggé 
+User Psychological Profile
 
-# Module du package "display"
-+ Camembert classification des sentimemts psychologique :
-+ Camembert classification des sentimemts social + comportement final :
-+ Jauge controverse :
-+ Nuage de mots clés social :
-+ Nuage de mots clés psychologique :
-+ Évolution de l'opinion publique sur l'utilisateur au fil d'une semaine 
+Social profile (information gathered from tweets mentioning the user)
+Psychological profile (information gathered from statuses posted by the user)
+"collect" Package Modules
 
+Collect statuses where the user is mentioned without being the author (social)
+Collect statuses published by the user (psychological)
+Identify the user's most popular tweet (based on RTs and likes) (psychological)
+Retrieve the user’s bio (psychological)
+Convert and save gathered tweets in .json format
+"analysis" Package Modules (using transformers)
 
-# Dash :
-+ Changer la langue partout
-+ Résoudre ce problème de padding
-+ Ajouter la bio
-+ Ajouter les nouvelles fonctionnalités# Samuel-Moyal-Coding-Weeks-
-# Samuel-Moyal-Coding-Weeks-
+Generate a word cloud of relevant keywords used by the user (filter to be determined; social & psychological)
+Determine how controversial the user is (social) (sentiment diversity? Virality?)
+Classify the sentiments that best describe how the user expresses themselves (psychological) (friendly/hostile -> pie chart)
+Classify the sentiments that best describe how the user is portrayed (social) (friendly/hostile -> pie chart)
+Generate a word cloud of relevant keywords used when talking about the user (filtered by grammatical category? nouns/adjectives?)
+Generate a sentiment cloud reflecting the most common sentiments in the user’s tweets
+Generate a sentiment cloud reflecting the most common sentiments in tweets where the user is tagged
+"display" Package Modules
+
+Pie chart for psychological sentiment classification
+Pie chart for social sentiment classification + final behavior analysis
+Controversy gauge
+Social keywords word cloud
+Psychological keywords word cloud
+Public opinion trend over a week
+
+Dash:
+
+Change the language throughout
+Fix the padding issue
+Add the bio
+Add the new features
+Samuel-Moyal-Coding-Weeks
