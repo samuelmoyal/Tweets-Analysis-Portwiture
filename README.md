@@ -1,60 +1,114 @@
-**Name**
+# Psychotweet
 
-Psychotweet
+## Description
 
-**Description**
+Psychotweet is a project designed to analyze the social and psychological profile of a Twitter user. By examining both the tweets posted by the user and those posted about them, the app provides insights into their online persona and environment.
 
-The goal of this project is to analyze the social and psychological profile of a Twitter user by examining both the tweets posted by the user and those posted about the user.
+---
 
+## Installation
 
+To set up and run the project, follow these steps:
 
-**Installation**
+1. **Clone the Repository**  
+   Clone this repository to your local machine using Git or download the zip file.
 
-To run the program:
+2. **Set Up Credentials**  
+   Edit the `credentials.py` file to include your Twitter developer credentials.
 
-Clone the repository.  
-Edit the credentials.py file by adding your Twitter developer credentials.  
-Install the following packages:  
-pip install stop_words wordcloud pandas textblob json dash plotly express graph objects  
-Navigate to the root of the repository and run the following command:  
-python -m display.app  
+3. **Install Required Packages**  
+   Install the necessary dependencies using the following command:  
+   ```bash
+   pip install stop_words wordcloud pandas textblob json dash plotly
+   ```
 
-**Usage**
+4. **Run the Application**  
+   Navigate to the root directory of the repository and execute the following command:  
+   ```bash
+   python -m display.app
+   ```
 
-This app performs a psychological analysis of a Twitter user. It can also help detect whether the Twitter environment   around the user is toxic or supportive, and identify whether the user speaks in a more positive or negative tone.  
+---
 
+## Usage
 
-**Roadmap**
+Psychotweet provides tools to analyze a Twitter user's activity and environment. Its main features include:
 
-Provide assistance and suggestions for improving the user's Twitter environment. For example, suggest a playlist based on   the user's tastes. Warn the user about tweets with overly aggressive language.  
+- **Psychological Analysis:** Examines the sentiments and tone of tweets posted by the user.  
+- **Toxicity Detection:** Evaluates whether the user's Twitter environment is toxic or supportive.  
+- **Tone Analysis:** Determines if the user’s tone is generally positive or negative.  
 
-User Psychological Profile
+---
 
-Social profile (information gathered from tweets mentioning the user)  
-Psychological profile (information gathered from statuses posted by the user)  
-"collect" Package Modules  
-Collect statuses where the user is mentioned without being the author (social)  
-Collect statuses published by the user (psychological)  
-Identify the user's most popular tweet (based on RTs and likes) (psychological)  
-Retrieve the user’s bio (psychological)  
-Convert and save gathered tweets in .json format  
-"analysis" Package Modules (using transformers)  
+## Roadmap
 
-Generate a word cloud of relevant keywords used by the user (filter to be determined; social & psychological)  
-Determine how controversial the user is (social) (sentiment diversity? Virality?)  
-Classify the sentiments that best describe how the user expresses themselves (psychological) (friendly/hostile -> pie chart)  
-Classify the sentiments that best describe how the user is portrayed (social) (friendly/hostile -> pie chart)  
-Generate a word cloud of relevant keywords used when talking about the user (filtered by grammatical category? nouns/adjectives?)  
-Generate a sentiment cloud reflecting the most common sentiments in the user’s tweets  
-Generate a sentiment cloud reflecting the most common sentiments in tweets where the user is tagged  
+### Planned Features
 
-"display" Package Modules  
+1. **Suggestions for Improvement:**  
+   - Provide recommendations for improving the user's Twitter environment.  
+   - Suggest playlists tailored to the user's preferences.  
+   - Alert users about tweets containing aggressive or negative language.
 
-Pie chart for psychological sentiment classification  
-Pie chart for social sentiment classification + final behavior analysis  
-Controversy gauge  
-Social keywords word cloud  
-Psychological keywords word cloud  
-Public opinion trend over a week  
+2. **User Profiles:**  
+   - Social profile: Insights from tweets mentioning the user.  
+   - Psychological profile: Insights from tweets authored by the user.  
+
+---
+
+## Features and Packages
+
+### `collect` Package Modules
+
+- **Social Profile:**  
+  - Collect tweets mentioning the user where they are not the author.  
+
+- **Psychological Profile:**  
+  - Collect tweets authored by the user.  
+  - Identify the user's most popular tweet (based on retweets and likes).  
+  - Retrieve the user’s bio.  
+  - Save collected tweets in `.json` format.  
+
+---
+
+### `analysis` Package Modules (Using Transformers)
+
+- Generate a **word cloud** of relevant keywords:  
+  - Used by the user (psychological analysis).  
+  - Used about the user (social analysis).  
+- Determine the user's **controversy level:**  
+  - Based on sentiment diversity or virality.  
+- **Sentiment Classification:**  
+  - Psychological: Friendly/hostile sentiments in the user's tweets.  
+  - Social: Friendly/hostile sentiments in tweets mentioning the user.  
+- Generate a **sentiment cloud** for:  
+  - The user's tweets.  
+  - Tweets mentioning the user.  
+
+---
+
+### `display` Package Modules
+
+- **Charts:**  
+  - Pie charts for psychological and social sentiment classification.  
+  - A controversy gauge for the user's activity.  
+
+- **Word Clouds:**  
+  - Social profile keywords.  
+  - Psychological profile keywords.  
+
+- **Trend Analysis:**  
+  - Public opinion trends over a week.
+
+---
+
+## Contributions
+
+Contributions are welcome! If you have ideas for new features, feel free to open a pull request or create an issue.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 
